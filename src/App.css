@@ -1,3 +1,283 @@
+* {
+  background-color: #011627;
+  color: #607B96;
+}
+
+a {
+  text-decoration: none;
+}
+
+.full-block {
+  display: flex;
+  height: 90vh;
+}
+
+.block-1 {
+  width: 20vw;
+  display: flex;
+  flex-direction: row;
+}
+
+.block-2, .block-3 {
+  padding: 13vw 0;
+  /* align-items: center; */
+  width: 40vw;
+}
+
+/* about-me */
+
+.icon-column {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.personal-info-column {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.box-white-text {
+  padding: 10px 20px;
+  border: 0.3px solid #1E2D3D;
+  border-top: 0;
+  align-content: center;
+  color: white;
+}
+
+.box-white-text-long {
+  height: 50em;
+  padding: 10px 20px;
+  border: 0.3px solid #1E2D3D;
+  border-top: 0;
+  align-content: center;
+  color: white;
+}
+
+.first-row-body {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border: 0.3px solid #1E2D3D;
+    /* position: fixed; */
+}
+
+.box-first-row {
+  padding: 10px 20px;
+  border: 0.3px solid #1E2D3D;
+  border-top: 0;
+  align-content: center;
+  width: 12vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-body{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.column-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 20vw;
+}
+
+.block-2-abtme, .block-3-abtme {
+  /* align-items: center; */
+  width: 40vw;
+  border: 0.3px solid #1E2D3D;
+  border-top: 0;
+  border-left: 0;
+}
+
+table {
+  width: 40vw;
+}
+.number-column {
+  padding: 0 2em;
+}
+
+td.text-column {
+  width: 200vw;
+}
+
+/* projects */
+.projects-1st-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 0;
+}
+
+.block-2-prj {
+  width: 80vw;
+  border: 0.3px solid #1E2D3D;
+  border-top: 0;
+  border-left: 0;
+}
+
+.main-body-prj {
+  display: flex;
+  flex-direction: row;
+  padding: 7vh 7vw;
+  flex-wrap: wrap;
+  overflow: scroll;
+  gap: 3vw;
+}
+
+.prj-card {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+  margin: 0 3vh;
+  color: white;
+}
+
+.img-grid {
+  transition: transform .2s;
+  width: 100%;
+  height: cover;
+  /* height: 30%; */
+  object-fit: cover;
+  height: 300px;
+  /* object-fit: contain; */
+  border-radius: 10px;
+}
+
+.img-grid:hover {
+  transform: scale(1.2); /* (120% zoom */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.prj-photo-box {
+  border: 1.5px solid #1E2D3D;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 13px;
+  height: 430px;
+  align-content: center;
+  margin-bottom: 10px;
+}
+
+.prj-description {
+  height: 5em;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 3%;
+}
+
+.button {
+  background-color: #1E2D3D;
+  color: white;
+  font-size: 11px;
+  width: 75px;
+  height: 20px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* contact */
+
+.main-body-contact {
+  display: flex;
+  flex-direction: row;
+  /* background-color: pink; */
+  padding: 23%;
+}
+
+.contact-form {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-input {
+  /* background-color: #e8ffe8; */
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  border-radius: 5px;
+}
+
+.submit-button {
+  background-color: #1E2D3D;
+  color: white;
+  font-size: 11px;
+  width: 120px;
+  height: 30px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* navbar */
+
+.full-nav {
+  display: flex;
+  align-items: center;
+  border: 0.3px solid #1E2D3D;
+  position: sticky;
+  top: 0;
+}
+
+.nav-1 {
+  width: 20vw;
+}
+
+.nav-2 {
+  width: 40vw;
+  display: flex;
+  /* justify-content: flex-end; */
+}
+
+.nav-3 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 40vw
+}
+
+.nav-box {
+  padding: 10px 20px;
+  border: 0.3px solid #1E2D3D;
+  align-content: center;
+}
+
+/* footer */
+
+.footer {
+  /* height: 10vh; */
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  border: 0.3px solid #1E2D3D;
+}
+
+.foot-1 {
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+}
+
+.foot-2 {
+  width: 60vw;
+  display: flex;
+  flex-direction: row-reverse;
+  
+}
+
 .App {
   text-align: center;
 }
