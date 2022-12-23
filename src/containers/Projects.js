@@ -8,13 +8,13 @@ function Home() {
 let projects = [
     {name: 'vina-t&t', 
     skills: 'react', 
-    photo: 'https://scontent.fbcn5-1.fna.fbcdn.net/v/t39.30808-6/320744842_3230828833914254_8439373815313572555_n.jpg?stp=dst-jpg_p720x720&_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=kiS62SpFD1YAX8g1LTW&_nc_ht=scontent.fbcn5-1.fna&oh=00_AfBzmQQC31tlh5mJXJP1ajbQyadowz9xAudgoAOhxn1l3Q&oe=63A4858A', 
-    description: 'This is a website to trace the origins and observe the life of the fruit before it becomes the final product.', 
+    photo: 'https://scontent.fbcn5-1.fna.fbcdn.net/v/t39.30808-6/320744842_3230828833914254_8439373815313572555_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=-aDLYY2r1I4AX8reUKo&_nc_ht=scontent.fbcn5-1.fna&oh=00_AfAIe-Px56XJTmuwerDQVj6g5dKTFPZ0Z570Qr4ue7TtgA&oe=63AA744A', 
+    description: 'This is a website to trace origin and observe life of fruits before becoming final products.', 
     result: 'https://projects.barcelonacodeschool.com/vinatt', 
     code: ''}, 
     {name: 'to-do-app', 
     skills: 'react native', 
-    photo: 'https://scontent.fbcn5-1.fna.fbcdn.net/v/t39.30808-6/320739963_2008924939302684_4446330421088923033_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=lw452-ppjxcAX-IRObe&_nc_ht=scontent.fbcn5-1.fna&oh=00_AfDR-L8hqG0iyS2q3-gUA1SfIjdxxRnhZjX3-_rFvAQtcg&oe=63A45BD4', 
+    photo: 'https://scontent.fbcn5-1.fna.fbcdn.net/v/t39.30808-6/320739963_2008924939302684_4446330421088923033_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=N1cBDd8FtvwAX8mU33w&_nc_ht=scontent.fbcn5-1.fna&oh=00_AfDpPuQqoFM8j_3gzEmaCRoCoAbRYsZ2pxv9UJRw0_B2aA&oe=63AA4A94', 
     description: 'This is an app to record and remind people what they have to do!', 
     result: '', 
     code: ''},
@@ -33,7 +33,7 @@ return (
                 <div className="box-white-text">
                     &#9660; projects
                 </div>
-                <div className="box-white-text-long">
+                <div className="box-white-text-long-contact">
                 <div>
                     <input type="checkbox" id="React" name="interest" value="react" />
                     <label for="react">React</label>
@@ -54,7 +54,7 @@ return (
                 projects.map((prj, i) => {
                 return (
                     <div key={i} className="prj-card">
-                            <p><span>Project {i+1} </span>
+                            <p><span>project {i+1} </span>
                             <span>// _{prj.name}</span></p> 
                             <div className="prj-photo-box">
                                 <img className="img-grid" alt='projectImage' src={prj.photo} />

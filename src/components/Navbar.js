@@ -63,11 +63,11 @@ export default Navbar;
 
 const linkStyles = {
   defaultLink: {
-    color: "#607B96",
+    color: "#6272A4",
     textDecoration: "none",
   },
   activeLink: {
     textDecoration: "none",
-    color: "white",
+    color: "#F8F8F2",
   },
 };

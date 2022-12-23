@@ -95,19 +95,16 @@ return (
                     &#9660; contacts
                 </div>
                 <div className="box-white-text">
-                    <div>
+                    <div className="comment-text">
                     trng.dt1@gmail.com
-                    </div>
-                    <div>
-                    +34 632486338
                     </div>
                 </div>
                 <div className="box-white-text">
                     &#9660; find-me-also-in
                 </div>
-                <div className="box-white-text-long">
+                <div className="box-white-text-long-contact">
                     <div>
-                    <a href="/">linkedln</a>
+                    <a className="comment-text" href="https://www.linkedin.com/in/trang-do-thuy-183435141/">linkedln</a>
                     </div>
                 </div>
             </div>
@@ -122,7 +119,7 @@ return (
             </div>
             <div className="main-body-contact">
                 <form onSubmit={handleSubmit} className="contact-form">
-                    <label for="name">_name:</label>
+                    <label className="yellow-text" for="name">_name:</label>
                     <input 
                         required={true} 
                         onChange={handleChangeName} 
@@ -130,7 +127,7 @@ return (
                         className="contact-input" 
                         name="name" 
                         placeholder="Hannah Montana"/>
-                    <label for="email">_email:</label>
+                    <label className="yellow-text" for="email">_email:</label>
                     <input 
                         required={true} 
                         onChange={handleChangeEmail} 
@@ -138,7 +135,7 @@ return (
                         className="contact-input" 
                         name="email"
                         placeholder="hannah_montana@gmail.com"/>
-                    <label for="message">_message:</label>
+                    <label className="yellow-text" for="message">_message:</label>
                     <textarea 
                         required={true} 
                         onChange={handleChangeMessage} 
@@ -146,8 +143,8 @@ return (
                         className="contact-input2" 
                         name="message"
                         placeholder="Type your message here.."/>
-                    <p className="button-section">
-                    <button className="submit-button">submit-message</button></p>
+                    <div className="button-section">
+                    <button className="submit-button">submit-message</button></div>
                 </form>
             </div>
         </div>
@@ -159,56 +156,60 @@ return (
                     <span>x</span>
                 </div>
             </div>
-            <div className="main-body">
+            <div className="main-body-contact-2">
                 <table>
                     <tr>
                         <td className="number-column">1</td>
-                        <td className="text-column">const button = document.querySelection('#sendBtn');</td>
+                        <td className="text-column"><span className="pink-text">const</span> <span className="blue-text">button</span> <span className="pink-text">=</span> </td>
                     </tr>
                     <tr>
                         <td className="number-column">2</td>
-                        <td className="text-column"></td>
+                        <td className="text-column">&#160;<span className="purple-text">document.querySelection</span><span className="green-text">('#sendBtn')</span><span className="pink-text">;</span></td>
                     </tr>
                     <tr>
                         <td className="number-column">3</td>
-                        <td className="text-column">const message = &#123;</td>
-                    </tr>
-                    <tr>
-                        <td className="number-column">4</td>
-                        <td className="text-column">	&#160;name: &#34;{name} &#34;</td>
-                    </tr>
-                    <tr>
-                        <td className="number-column">5</td>
-                        <td className="text-column">	&#160;email: &#34;{email} &#34;</td>
-                    </tr>
-                    <tr>
-                        <td className="number-column">6</td>
-                        <td className="text-column">	&#160;message: &#34;{message} &#34;</td>
-                    </tr>
-                    <tr>
-                        <td className="number-column">7</td>
-                        <td className="text-column">&#160;date: &#34; {date} &#34;</td>
-                    </tr>
-                    <tr>
-                        <td className="number-column">8</td>
-                        <td className="text-column">&#125;</td>
-                    </tr>
-                    <tr>
-                        <td className="number-column">9</td>
                         <td className="text-column"></td>
                     </tr>
                     <tr>
-                        <td className="number-column">10</td>
-                        <td className="text-column">button.addEventListener&#40;&#39;click&#39;,&#160;&#40; &#41;&#160; &#61;&#62;
- &#123;</td>
+                        <td className="number-column">4</td>
+                        <td className="text-column"><span className="pink-text">const</span> <span className="blue-text">message</span> <span className="pink-text">= </span><span className="purple-text">&#123;</span></td>
                     </tr>
                     <tr>
+                        <td className="number-column">5</td>
+                        <td className="text-column">	&#160;<span className="yellow-text">name: </span> <span className="orange-text">&#34; {name} &#34;</span></td>
+                    </tr>
+                    <tr>
+                        <td className="number-column">6</td>
+                        <td className="text-column">	&#160;<span className="yellow-text">email: </span><span className="orange-text">&#34;{email} &#34;</span></td>
+                    </tr>
+                    <tr>
+                        <td className="number-column">7</td>
+                        <td className="text-column">	&#160;<span className="yellow-text">message: </span><span className="orange-text">&#34;{message} &#34;</span></td>
+                    </tr>
+                    <tr>
+                        <td className="number-column">8</td>
+                        <td className="text-column">&#160;<span className="yellow-text">date:</span> <span className="orange-text">&#34; {date} &#34;</span></td>
+                    </tr>
+                    <tr>
+                        <td className="number-column">9</td>
+                        <td className="text-column"><span className="purple-text">&#125;</span></td>
+                    </tr>
+                    <tr>
+                        <td className="number-column">10</td>
+                        <td className="text-column"></td>
+                    </tr>
+                    <tr> 
                         <td className="number-column">11</td>
-                        <td className="text-column">&#160;form.send(message);</td>
+                        <td className="text-column"><span className="blue-text">button</span><span className="purple-text">.addEventListener</span><span className="pink-text">&#40;&#39;click&#39;,&#160;&#40; &#41;&#160; &#61;&#62; </span><span className="purple-text">&#123;</span>
+ </td>
                     </tr>
                     <tr>
                         <td className="number-column">12</td>
-                        <td className="text-column">&#125;&#41;</td>
+                        <td className="text-column">&#160;<span className="green-text">form</span><span className="purple-text">.send</span><span className="blue-text">(message);</span></td>
+                    </tr>
+                    <tr>
+                        <td className="number-column">13</td>
+                        <td className="text-column"><span className="purple-text">&#125;</span><span className="pink-text">&#41;</span></td>
                     </tr>
                 </table>
             </div>
