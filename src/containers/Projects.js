@@ -9,7 +9,7 @@ let projects = [
     {name: 'vina-t&t', 
     skills: 'react', 
     photo: 'https://scontent.fbcn5-1.fna.fbcdn.net/v/t39.30808-6/320744842_3230828833914254_8439373815313572555_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=-aDLYY2r1I4AX8reUKo&_nc_ht=scontent.fbcn5-1.fna&oh=00_AfAIe-Px56XJTmuwerDQVj6g5dKTFPZ0Z570Qr4ue7TtgA&oe=63AA744A', 
-    description: 'This is a website to trace origin and observe life of fruits before becoming final products.', 
+    description: 'This is a e-commerce site allowing users to trace origin and observe life of fruits.', 
     result: 'https://projects.barcelonacodeschool.com/vinatt', 
     code: ''}, 
     {name: 'to-do-app', 
@@ -28,21 +28,21 @@ let projects = [
 return (
     <>
     <div className="full-block">
-        <div class="block-1">
+        <div className="block-1">
             <div className="projects-1st-column">
                 <div className="box-white-text">
                     &#9660; projects
                 </div>
                 <div className="box-white-text-long-contact">
                 <div>
-                    <input type="checkbox" id="React" name="interest" value="react" />
-                    <label for="react">React</label>
+                    <input type="checkbox" id="react" name="interest" value="react" />
+                    <label for="react">react</label>
                 </div>
                 </div>
             </div>
         </div>
 
-        <div class="block-2-prj">
+        <div className="block-2-prj">
             <div className="first-row-body">
                 <div className="box-first-row">
                     <span>names of skills</span> 

@@ -10,9 +10,9 @@ return (
             <div className="nav-box">
                 <a href="https://www.linkedin.com/in/trang-do-thuy-183435141/">linkedln</a>
             </div>
-            <div className="nav-box">
+            {/* <div className="nav-box">
                 <a href="/">facebook</a>
-            </div>
+            </div> */}
         </div>
             
         <div className="foot-2">

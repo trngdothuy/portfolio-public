@@ -4,31 +4,31 @@ import {useLocation, useNavigate} from 'react-router-dom'
 // import "./styles.css";
 
 function Home() {
-    const skills = ["javascript", "react.js","react-native","node.js","express","mongodb","html5","css3"];
+    const skills = ["html/css","javascript","react.js","node.js", "express","mongodb","react-native","git","ui/ux basics","python", "rust"];
 
-    const content = [
-        {line: 1, text: "/**"},
-        {line: 2, text: "** About me"},
-        {line: 3, text: "* I am a Junior Full-stack Developer"},
-        {line: 4, text: "*  with a Master’s degree, majoring in Digital"},
-        {line: 5, text: "* Business."},
-        {line: 6, text: "*"},
-        {line: 7, text: "* I decided to switch my career path with"},
-        {line: 8, text: "* serious consideration to courageously follow"},
-        {line: 9, text: "*  my true passion. "},
-        {line: 10, text: "*"},
-        {line: 11, text: "*  I’ve joined and graduated from an intensive-9-"},
-        {line: 12, text: "*  week Javascript bootcamp at Barcelona Code"},
-        {line: 13, text: "*  School to extend my knowledge in the IT"},
-        {line: 14, text: "*  industry and acquire important skills."},
-        {line: 15, text: "*"},
-        {line: 16, text: "*    I am willing to learn, improve and work hard"},
-        {line: 17, text: "*    for   my job."}]
+    // const content = [
+    //     {line: 1, text: "/**"},
+    //     {line: 2, text: "** About me"},
+    //     {line: 3, text: "* I am a Junior Full-stack Developer"},
+    //     {line: 4, text: "*  with a Master’s degree, majoring in Digital"},
+    //     {line: 5, text: "* Business."},
+    //     {line: 6, text: "*"},
+    //     {line: 7, text: "* I decided to switch my career path with"},
+    //     {line: 8, text: "* serious consideration to courageously follow"},
+    //     {line: 9, text: "*  my true passion. "},
+    //     {line: 10, text: "*"},
+    //     {line: 11, text: "*  I’ve joined and graduated from an intensive-9-"},
+    //     {line: 12, text: "*  week Javascript bootcamp at Barcelona Code"},
+    //     {line: 13, text: "*  School to extend my knowledge in the IT"},
+    //     {line: 14, text: "*  industry and acquire important skills."},
+    //     {line: 15, text: "*"},
+    //     {line: 16, text: "*    I am willing to learn, improve and work hard"},
+    //     {line: 17, text: "*    for   my job."}]
 
 return (
     <>
     <div className="full-block">
-        <div class="block-1">
+        <div className="block-1">
             <div className="icon-column"> 
             {/* bright when hovering */}
                 <p className="comment-text">icon</p>
@@ -69,7 +69,7 @@ return (
             </div>
         </div>
 
-        <div class="block-2-abtme">
+        <div className="block-2-abtme">
             <div className="first-row-body">
                 <div className="box-first-row">
                     <span>personal-info</span> 
@@ -162,8 +162,54 @@ return (
                     <span>x</span>
                 </div>
             </div>
-            <div className="main-body">
-                <table className="table-1">
+
+            <div className="main-body-abt-me-2">
+                <></>
+                <div>	&#160;&#160;&#160;// Code snippet showcase:</div>
+                <div className="skill-card">
+                    {/* first bar top */}
+                    <div className="skill-card-top-bar">
+                        {/* left side - name, photo */}
+                        <div className="skill-card-top-left">
+                            <img className="skill-img" src="https://media.licdn.com/dms/image/D4D03AQG7wjUg53Fl4w/profile-displayphoto-shrink_400_400/0/1670675482237?e=1677715200&v=beta&t=gFARcdXV3023F8gL1ItYcZ8NdKKKZu6urVQXCASQivk" alt="Trang"/>
+                            <div className="skill-card-name-time"><b className="pink-text">@trngdothuy </b><span className="comment-text">created a month ago</span></div>
+                        </div>
+
+                    {/* right side - details, like */}
+                        <div className="skill-card-top-right">
+                            details
+                            stars
+                        </div>
+                    </div>
+                    
+
+                    {/* body - main code */}
+                    <div className="skill-card-code">
+                        {/* color */}
+                        <div> <span className="purple-text">function</span> <span className="blue-text">thisIsMySkills</span> <span className="purple-text">&#40;&#41; &#123; </span></div>
+                          <div className="left-space"><span className="purple-text">const</span> <span className="yellow-text">passions</span> <span className="purple-text">= &#123;<span className="pink-text">'programming', 'technology', 'business', 'fashion'</span>&#125;;</span></div>
+                          <div className="left-space">
+                          <span className="purple-text">const</span> <span className="yellow-text">education</span> <span className="purple-text">= &#123;<span className="pink-text">'Barcelona Code School', 'EU Business School'</span>&#125;;</span></div>
+                            <div className="left-space"><span className="purple-text">const</span> <span className="blue-text">result</span> <span className="yellow-text">= passions</span><span className="purple-text">.map&#40;<span className="pink-text">passion</span> &#61;&#62; <span className="pink-text">passion</span> * <span className="yellow-text">education</span>&#41;;</span></div>
+                            <div className="left-space"><span className="purple-text">return <span className="blue-text">result</span>;</span></div>
+                            <div><span className="purple-text">&#125;</span></div>
+                            <p> </p>
+                            <div className="comment-text">/* click "details" to see more */</div>
+                    </div>
+                    
+
+                    {/* result showcase */}
+                    <div className="skill-card-result">
+                        {/* if yes => display, no => display none */}
+                    {/* x button => display none (state) */}
+                    <p> > After enthusiastically self-studying Python and Rust on my own, I've completed a JavaScript Bootcamp to sharpen my skills.</p>
+                    <p> > Skills I possess: HTML, CSS, JavaScript, Node, Express, MongoDB, React.js, React Native, Git, UX/UI basics, Rust, Python and continue to be expanding</p>
+                    <p> > Additionally, I believe my comprehension of Economy and Business can pave the way to have a wider view of digital solutions to help them grow both technically and profitably.</p>
+                    </div>
+                </div>
+
+
+                {/* <table className="table-1">
                     <tr>
                         <td className="number-column">1</td>
                         <td className="text-column">/**</td>
@@ -228,7 +274,7 @@ return (
                         <td className="number-column">16</td>
                         <td className="text-column">* &gt; Vietnamese - Native </td>
                     </tr>
-                </table>
+                </table> */}
             </div>
         </div>
     </div></>
@@ -237,16 +283,11 @@ return (
 
 export default Home;
 
-// function thisIsMySkills () {
-//     const passions = {programming, technology, business, fashion}
-//     const education = {'Barcelona Code School', 'EU Business School'}
-//     const result = passions.map(passion => passion * education)
-//     return result
-// }
 
-// function languagesISpeak () {
+
+// let languagesSpoken = () => {
 //     const motherTounge = "Vietnamese"
-    
-//     const result = passions.map(passion => passion * education)
-//     return result
+//     const earthLingo = {"English", "Spanish"}   
+//     const lingua = earthLingo.reduce((total, value) => (total + value), motherTounge)
+//     return lingua
 // }

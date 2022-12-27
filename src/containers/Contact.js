@@ -110,7 +110,7 @@ return (
             </div>
         </div>
 
-        <div class="block-2-abtme">
+        <div className="block-2-abtme">
             <div className="first-row-body">
                 <div className="box-first-row">
                     <span>contacts</span> 

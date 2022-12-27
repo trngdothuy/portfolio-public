@@ -4,14 +4,14 @@ import { NavLink } from "react-router-dom";
 const Navbar = () => {
 
   return (
-    <div class="full-nav">
-      <div class="nav-1">
-        <div class="nav-box"> 
+    <div className="full-nav">
+      <div className="nav-1">
+        <div className="nav-box"> 
           <a href="/">trang-do-thuy</a>
         </div> 
       </div>
     <div className="nav-2">
-      <div class="nav-box">
+      <div className="nav-box">
         <NavLink 
           to={"/"}
           style={ ({isActive}) => (
@@ -67,7 +67,10 @@ const linkStyles = {
     textDecoration: "none",
   },
   activeLink: {
-    textDecoration: "none",
+    // textDecoration: "pink underline",
     color: "#F8F8F2",
+    // color: "#dd82b8",
+    textShadow: "1px 3px #dd82b8",
+    // fontSize: "bold",
   },
 };

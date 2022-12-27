@@ -7,7 +7,7 @@ function Home() {
 
 return (
     <>
-    <div className="full-block">
+    <div className="full-block-home">
         <div class="block-1"></div>
         <div class="block-2">
             <h5>Hi all, I am</h5>
