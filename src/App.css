@@ -202,7 +202,14 @@ a {
   align-items: center;
 }
 
-.skill-card-code{
+.skill-card-top-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.skill-card-code {
   /* background-color: white; */
   margin: 20px;
   border: 0.5px solid #1E2D3D;
@@ -222,14 +229,39 @@ a {
 
 .skill-card-result {
   /* background-color: white; */
-  /* margin: 20px 10px; */
-  padding: 0px 30px;
+  margin: 20px 10px;
+  border: 0.5px solid #FFB86C;
+  /* width: 70%; */
+  border-radius: 10px;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: row;
 }
 
 .skill-img {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   border-radius: 50px;
+}
+
+.skill-card-btn {
+  background-color: transparent;
+  border: none;
+  /* color: #DD82B8; */
+  color: #FFB86C;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.skill-card-btn:hover {
+  text-shadow: 0px 1px white;
+}
+
+
+.skill-card-icon {
+  width: 18px;
+  height: 18px;
 }
 
 /* td.text-column {
