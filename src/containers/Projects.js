@@ -1,29 +1,33 @@
-import React from 'react';
-import {useLocation, useNavigate, useState} from 'react-router-dom'
+import React, { useState, useEffect } from "react";
+import {useLocation, useNavigate} from 'react-router-dom'
 
 // import "./styles.css";
 
 function Home() {
 
-let projects = [
-    {name: 'vina-t&t', 
-    skills: 'react', 
-    photo: 'https://scontent.fbcn5-1.fna.fbcdn.net/v/t39.30808-6/320744842_3230828833914254_8439373815313572555_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=-aDLYY2r1I4AX8reUKo&_nc_ht=scontent.fbcn5-1.fna&oh=00_AfAIe-Px56XJTmuwerDQVj6g5dKTFPZ0Z570Qr4ue7TtgA&oe=63AA744A', 
-    description: 'This is a e-commerce site allowing users to trace origin and observe life of fruits.', 
-    result: 'https://projects.barcelonacodeschool.com/vinatt', 
-    code: ''}, 
-    {name: 'to-do-app', 
-    skills: 'react native', 
-    photo: 'https://scontent.fbcn5-1.fna.fbcdn.net/v/t39.30808-6/320739963_2008924939302684_4446330421088923033_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=N1cBDd8FtvwAX8mU33w&_nc_ht=scontent.fbcn5-1.fna&oh=00_AfDpPuQqoFM8j_3gzEmaCRoCoAbRYsZ2pxv9UJRw0_B2aA&oe=63AA4A94', 
-    description: 'This is an app to record and remind people what they have to do!', 
-    result: '', 
-    code: ''},
-    {name: 'learning-app', 
-    skills: 'react native', 
-    photo: 'https://scontent.fbcn5-2.fna.fbcdn.net/v/t39.30808-6/320675877_3299723376949960_5683993792672355688_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=khspv9N8Z5IAX-MxKuf&_nc_ht=scontent.fbcn5-2.fna&oh=00_AfBLL8ar6c7HrKPIm7ztoSbX3yshs2bWtIPMaNX4-lCGMg&oe=63A5027B', 
-    description: 'This is an app to read, listen, and learn.', 
-    result: '', 
-    code: ''}]
+    const [checked, setChecked] = useState(false)
+
+    let projects = [
+        {name: 'vina-t&t', 
+        skills: 'react', 
+        photo: 'https://res.cloudinary.com/dm63jyidg/image/upload/v1672190592/portfolio/gbriqtc45bugvfszqgt0.jpg', 
+        description: 'This is a e-commerce site allowing users to trace origin and observe life of fruits.', 
+        result: 'https://projects.barcelonacodeschool.com/vinatt', 
+        code: ''}, 
+        {name: 'to-do-app', 
+        skills: 'react native', 
+        photo: 'https://res.cloudinary.com/dm63jyidg/image/upload/v1672190592/portfolio/yuwtyn6yg0oai7tylpbi.jpg', 
+        description: 'This is an app to record and remind people what they have to do!', 
+        result: '', 
+        code: ''},
+        {name: 'learning-app', 
+        skills: 'react native', 
+        photo: 'https://res.cloudinary.com/dm63jyidg/image/upload/v1672190593/portfolio/gfnpa4eevfw3t7nnc8dh.jpg', 
+        description: 'This is an app to read, listen, and learn.', 
+        result: '', 
+        code: ''}];
+
+    const skills = ["html/css","javascript","react.js","node.js", "express","mongodb","react-native","git","ui/ux basics","python", "rust"];
 
 return (
     <>
@@ -34,10 +38,12 @@ return (
                     &#9660; projects
                 </div>
                 <div className="box-white-text-long-contact">
-                <div>
-                    <input type="checkbox" id="react" name="interest" value="react" />
-                    <label for="react">react</label>
-                </div>
+                    {skills.map((skill, i) => {
+                        return <div className="filter-box" key={i}>
+                                <input type="checkbox" checked={checked} onChange={e => setChecked(e.target.checked)} id={skill} name={skill} value={skill} />
+                                <label for={skill}>{skill}</label>
+                            </div>
+                    })}
                 </div>
             </div>
         </div>
@@ -45,7 +51,8 @@ return (
         <div className="block-2-prj">
             <div className="first-row-body">
                 <div className="box-first-row">
-                    <span>names of skills</span> 
+                    <span>my-projects</span> 
+                    {/* name of skills when sort */}
                     <span>x</span>
                 </div>
             </div>

@@ -32,6 +32,18 @@ a {
   text-decoration: none;
 }
 
+.footer-a {
+  display: flex;
+  text-decoration: none;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.nav-box:hover {
+  text-shadow: 0px 1px white;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
 .yellow-text {
   color:#F1FA8C;
 }
@@ -45,11 +57,17 @@ a {
 }
 
 .green-text {
-  color: #50FA7B;
+  color: #63d27f;
 }
 
 .pink-text {
   color: #dd82b8;
+}
+
+.pink-text-underlined {
+  color: #dd82b8;
+  text-decoration: 0.7px wavy underline yellow;
+  padding: 0.2px;
 }
 
 .orange-text {
@@ -73,6 +91,7 @@ a {
   width: 20vw;
   display: flex;
   flex-direction: row;
+  overflow: scroll;
 }
 
 .block-2, .block-3 {
@@ -82,6 +101,22 @@ a {
   justify-content: center; */
   /* align-items: center; */
   width: 40vw;
+}
+
+/* home picture */
+
+.handle {
+  border: 1px solid white;
+  z-index: -1;
+}
+
+.handle1 {
+  border: 1px solid pink;
+}
+
+.home-picture {
+  display: grid;
+  Grid-template-columns: 1fr 1fr 1fr;
 }
 
 /* about-me */
@@ -105,6 +140,14 @@ a {
 }
 
 .box-white-text {
+  padding: 10px 20px;
+  border: 0.3px solid #1E2D3D;
+  border-top: 0;
+  align-content: center;
+  color: white;
+}
+
+.box-white-text-hidden {
   padding: 10px 20px;
   border: 0.3px solid #1E2D3D;
   border-top: 0;
@@ -144,9 +187,11 @@ a {
   padding-top: 10px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  overflow: scroll;
   /* height: 90vh; */
   font-size: 0.9em;
+  height: 80vh;
   /* width: 20%; */
 }
 
@@ -227,6 +272,10 @@ a {
   padding-left: 10px;
 }
 
+.left-space-2 {
+  padding-left: 90px;
+}
+
 .skill-card-result {
   /* background-color: white; */
   margin: 20px 10px;
@@ -247,7 +296,6 @@ a {
 .skill-card-btn {
   background-color: transparent;
   border: none;
-  /* color: #DD82B8; */
   color: #FFB86C;
   display: flex;
   justify-content: center;
@@ -262,6 +310,19 @@ a {
 .skill-card-icon {
   width: 18px;
   height: 18px;
+}
+
+.side-bar-btn {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  /* gap: 5px; */
+  font-size: 1em;
+}
+
+.side-bar-btn:hover {
+  text-shadow: 0px 1px #8BE9FD;
 }
 
 /* td.text-column {
@@ -352,6 +413,13 @@ a {
 .button:hover, .submit-button {
   transform: scale(1.1); /* (120% zoom */
   box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+}
+
+.filter-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
 }
 
 /* contact */
