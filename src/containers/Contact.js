@@ -11,6 +11,8 @@ const [email, setEmail] = useState()
 const [message, setMessage] = useState()
 const [date, setDate] = useState()
 
+const [contactPressed, setContactPressed] = useState(false);
+const [findMePressed, setFindMePressed] = useState(false);
 
 
 function findDate () {
@@ -86,26 +88,67 @@ function handleSubmit(event) {
     // console.log("this is message" + e.target.value)
     };
 
+    function handleContactClick (e) {
+        if (contactPressed === false) {
+            setContactPressed(true)
+            // console.log('personal info pressed')
+        } else {
+            setContactPressed(false)
+            // console.log('personal info closed')
+        }
+    };
+
+    function handleFindMeClick (e) {
+        if (findMePressed === false) {
+            setFindMePressed(true)
+            // console.log('personal info pressed')
+        } else {
+            setFindMePressed(false)
+            // console.log('personal info closed')
+        }
+    };
+
 return (
     <>
     <div className="full-block">
         <div class="block-1">
             <div className="projects-1st-column">
                 <div className="box-white-text">
-                    &#9660; contacts
+                    {contactPressed ? (
+                        <button 
+                        className="side-bar-btn"
+                        onClick={handleContactClick}>&#9660; contacts</button>
+                    ) : (
+                        <button 
+                        className="side-bar-btn"
+                        onClick={handleContactClick}>&#9654; contacts</button>
+                    )} 
                 </div>
+
+                {contactPressed && <div className="box-white-text">
+                    <a className="skill-extend-side-bar" href = "mailto: trng.dt1@gmail.com">&#62; trng.dt1@gmail.com</a>
+                </div>
+                }
+
                 <div className="box-white-text">
-                    <div className="comment-text">
-                    trng.dt1@gmail.com
-                    </div>
+                    {findMePressed ? (
+                        <button 
+                        className="side-bar-btn"
+                        onClick={handleFindMeClick}>&#9660; find-me-also-in</button>
+                    ) : (
+                        <button 
+                        className="side-bar-btn"
+                        onClick={handleFindMeClick}>&#9654; find-me-also-in</button>
+                    )} 
                 </div>
-                <div className="box-white-text">
-                    &#9660; find-me-also-in
-                </div>
+
                 <div className="box-white-text-long-contact">
-                    <div>
-                    <a className="comment-text" href="https://www.linkedin.com/in/trang-do-thuy-183435141/">linkedln</a>
-                    </div>
+                    {findMePressed && <div>
+                    <a className="skill-extend-side-bar" href="https://www.linkedin.com/in/trang-do-thuy-183435141/">
+                    &#62;
+                    linkedin
+                    </a>
+                    </div>}
                 </div>
             </div>
         </div>

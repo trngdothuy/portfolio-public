@@ -138,7 +138,7 @@ return (
                     </tr>
                     <tr>
                         <td className="number-column">21</td>
-                        <td className="text-column">* for my job.
+                        <td className="text-column">* for my career.
                         </td>
                     </tr>
                     <tr>
@@ -209,13 +209,13 @@ return (
                         </div>
                         <div className="left-space">
                             <span className="purple-text">const</span> 
-                            <span className="yellow-text"> passions</span> <span className="purple-text">= &#123;
-                            <span className="pink-text">'programming', 'technology', 'business', 'fashion'</span>&#125;;</span>
+                            <span className="yellow-text"> passions</span> <span className="purple-text">= 	&#91;
+                            <span className="pink-text">'programming', 'technology', 'business', 'fashion'</span>	&#93;;</span>
                         </div>
                         <div className="left-space">
                           <span className="purple-text">const </span> 
-                          <span className="yellow-text">education</span> <span className="purple-text">= &#123;
-                          <span className="pink-text">'Barcelona Code School', 'EU Business School'</span>&#125;;
+                          <span className="yellow-text">education</span> <span className="purple-text">= 	&#91;
+                          <span className="pink-text">'Barcelona Code School', 'EU Business School'</span>&#93;;
                           </span>
                         </div>
                         <div className="left-space">
@@ -340,9 +340,9 @@ return (
                           <span className="purple-text">const</span> 
                           <span className="yellow-text"> earthLingo </span> 
                           <span className="purple-text">
-                            = &#123;
+                            = 	&#91;
                             <span className="pink-text">"English", "Spanish"</span>
-                            &#125;;
+                            &#93;;
                             </span>
                         </div>
                         <div className="left-space">
@@ -353,11 +353,11 @@ return (
                                 .reduce&#40;&#40;
                                 <span className="pink-text">total, value</span>
                                 &#41; &#61;&#62; &#40;
-                                <span className="pink-text">total</span>
+                                <span className="pink-text">total </span>
                                 + 
-                                <span className="pink-text">value</span>
+                                <span className="pink-text"> value</span>
                                 &#41;, 
-                                <span className="yellow-text">education</span>&#41;;
+                                <span className="yellow-text"> education</span>&#41;;
                             </span>
                         </div>
                         <div className="left-space">
@@ -375,7 +375,7 @@ return (
                             <span className="purple-text">var</span> 
                             <span className="green-text"> Trang </span> 
                             <span className="purple-text">&#61; new </span> 
-                            <span className="yellow-text">Programmer</span> 
+                            <span className="yellow-text">Programmer </span> 
                             <span className="purple-text">
                                 (
                                 <span className="blue-text">languagesSpoken</span>)
