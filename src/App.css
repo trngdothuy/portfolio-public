@@ -147,6 +147,7 @@ a {
   color: white;
 }
 
+
 .box-white-text-hidden {
   padding: 10px 20px;
   border: 0.3px solid #1E2D3D;
@@ -183,7 +184,7 @@ a {
   justify-content: space-between;
 }
 
-.box-first-row:hover {
+.box-first-row:hover, .box-white-text:hover, .side-bar-btn:hover {
   text-shadow: 0px 1px #8BE9FD;
 }
 
@@ -310,7 +311,6 @@ a {
   text-shadow: 0px 1px white;
 }
 
-
 .skill-card-icon {
   width: 18px;
   height: 18px;
@@ -323,10 +323,6 @@ a {
   justify-content: center;
   /* gap: 5px; */
   font-size: 1em;
-}
-
-.side-bar-btn:hover {
-  text-shadow: 0px 1px #8BE9FD;
 }
 
 .skill-extend-side-bar, .icon-extend-side-bar {

@@ -23,7 +23,7 @@ return (
                 <a className="footer-a" href="https://github.com/trngdothuy">
                     @trngdothuy
                     <img className="skill-card-icon" src="https://res.cloudinary.com/dm63jyidg/image/upload/v1672204650/portfolio/sy2wu4ywcm5nu1iq7s2a.png" alt="git-icon"/>
-                    </a>
+                </a>
             </div>
         </div>
 	</div>
