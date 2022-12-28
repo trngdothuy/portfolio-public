@@ -171,7 +171,11 @@ return (
                         <div className="skill-card-top-left">
                             <img className="skill-img" src="https://media.licdn.com/dms/image/D4D03AQG7wjUg53Fl4w/profile-displayphoto-shrink_400_400/0/1670675482237?e=1677715200&v=beta&t=gFARcdXV3023F8gL1ItYcZ8NdKKKZu6urVQXCASQivk" alt="Trang"/>
                             <div className="skill-card-name-time">
-                                <b className="pink-text">@trngdothuy </b>
+                                <b>
+                                    <a className="pink-text" href="https://github.com/trngdothuy">
+                                        @trngdothuy
+                                    </a>
+                                </b>
                                 <span className="comment-text">created a month ago</span>
                             </div>
                         </div>
@@ -286,7 +290,11 @@ return (
                         <div className="skill-card-top-left">
                             <img className="skill-img" src="https://media.licdn.com/dms/image/D4D03AQG7wjUg53Fl4w/profile-displayphoto-shrink_400_400/0/1670675482237?e=1677715200&v=beta&t=gFARcdXV3023F8gL1ItYcZ8NdKKKZu6urVQXCASQivk" alt="Trang"/>
                             <div className="skill-card-name-time">
-                                <b className="pink-text">@trngdothuy </b>
+                                <b>
+                                    <a className="pink-text" href="https://github.com/trngdothuy">
+                                        @trngdothuy
+                                    </a>
+                                </b>
                                 <span className="comment-text">created 2 months ago</span>
                             </div>
                         </div>
@@ -377,24 +385,21 @@ return (
                             <span className="purple-text">
                                 &#123;
                                 <span className="orange-text">keywords</span>
-                                &#58; 
+                                &#58; &#123;
+                                <span className="pink-text">
+                                    "front- end", "back-end",
+                                </span>
                             </span>
                             <div className="left-space-2">
-                                <span className="purple-text">&#123;</span>
-                                <span className="pink-text">
-                                    "full-stack", "programmer", "front-end", "back-end"
-                                    <span className="purple-text">&#125;,</span> 
-                                </span>
+                                <span className="pink-text">  "full-stack", "programmer"</span>
+                                <span className="purple-text">&#125;,</span>  
                             </div>
                         </div>
                         <div className="left-space">
-                            <div className="left-space">
-                              <span className="orange-text">languages</span> 
-                              <span className="purple-text">&#58; </span>
-                              <span className="blue-text">languagesSpoken</span>
-                              <span className="purple-text">&#125;; </span>
-              
-                            </div>
+                            <span className="orange-text">languages</span> 
+                            <span className="purple-text">&#58; </span>
+                            <span className="blue-text">languagesSpoken</span>
+                            <span className="purple-text">&#125;; </span>
                         </div>
                         <p> </p>
                         <div className="comment-text">/* click "details" to see more */</div>

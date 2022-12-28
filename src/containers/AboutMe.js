@@ -45,9 +45,9 @@ return (
         <div className="block-1">
             <div className="icon-column"> 
             {/* bright when hovering */}
-                <p className="comment-text">icon</p>
-                <p className="comment-text">icon</p>
-                <p className="comment-text">icon</p>
+                <p className="icon-extend-side-bar">icon</p>
+                <p className="icon-extend-side-bar">icon</p>
+                <p className="icon-extend-side-bar">icon</p>
             </div>
 
             {/* personal info side bar section */}
@@ -64,11 +64,11 @@ return (
                 )} 
                 </div>
                 {personalInfoPressed && <div className="box-white-text-hidden">
-                    <div className="comment-text">
+                    <div className="skill-extend-side-bar">
                         {/* pressable, change symbols, change color of text */}
                     &gt; bio
                     </div>
-                    <div className="comment-text">
+                    <div className="skill-extend-side-bar">
                     &gt; cv
                     </div>
                 </div>}
@@ -89,7 +89,7 @@ return (
                 {skillsPressed && <div className="box-white-text-long">
                     <div>
                         {skills.map((skill, i) => {
-                            return <div className="comment-text" key={i}>&gt;  {skill}</div>
+                            return <div className="skill-extend-side-bar" key={i}>&gt;  {skill}</div>
                         })}
                     </div>
                 </div>}
@@ -110,7 +110,7 @@ return (
                 <div className="box-white-text-long">
                 {contactPressed && 
                     <div>
-                    <a className="comment-text" href = "mailto: trng.dt1@gmail.com">trng.dt1@gmail.com</a>
+                    <a className="skill-extend-side-bar" href = "mailto: trng.dt1@gmail.com">trng.dt1@gmail.com</a>
                     </div>}
                 </div>
                 
