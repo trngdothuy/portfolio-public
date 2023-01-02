@@ -129,7 +129,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap; */
   height: 456px;
-  width: 456px;
+  width: 452px;
   border: 1px solid pink;
   display: grid;
   grid-template-areas:
@@ -547,13 +547,15 @@ a {
   border-left: 0;
 }
 
+
 .main-body-prj {
   display: flex;
   flex-direction: row;
   padding: 7vh 7vw;
   flex-wrap: wrap;
   overflow: scroll;
-  gap: 3vw;
+  gap: 0 3vw;
+  height: 69vh;
 }
 
 .prj-card {
@@ -587,11 +589,12 @@ a {
   border-radius: 20px;
   padding: 10px;
   align-content: center;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .prj-description {
   height: 6em;
+  line-height: 20px;
 }
 
 .button-row {

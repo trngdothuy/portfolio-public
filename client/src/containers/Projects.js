@@ -11,59 +11,82 @@ function Home() {
         id: n, 
         skills: "html/css, javascript, react.js, node.js, express, mongodb, git, ui/ux basics, postman, nodemailer", 
         photo: 'https://res.cloudinary.com/dm63jyidg/image/upload/v1672190592/portfolio/gbriqtc45bugvfszqgt0.jpg', 
-        description: 'This is a e-commerce site allowing users to trace origin and observe life of fruits.', 
+        description: '> an e-commerce site allowing users to trace origin and observe life of fruits.', 
         result: 'https://projects.barcelonacodeschool.com/vinatt', 
-        code: ''}, 
+        code: 'https://github.com/trngdothuy/vina-t-t-web-application'}, 
         {name: 'to-do-app', 
         id: n++, 
         skills: "html/css, javascript, react.js, node.js, react-native, git, ui/ux basics", 
         photo: 'https://res.cloudinary.com/dm63jyidg/image/upload/v1672190592/portfolio/yuwtyn6yg0oai7tylpbi.jpg', 
-        description: 'This is an app to record and remind users what they have to do.', 
+        description: '> an app to record and remind users what they have to do.', 
         result: '', 
-        code: ''},
+        code: 'https://github.com/trngdothuy/todos-app-project'},
         {name: 'learning-app', 
         id: n++, 
         skills: "html/css, javascript, react.js, node.js, express, mongodb,react-native, git, ui/ux basics,google cloud vision api, cloudinary", 
         photo: 'https://res.cloudinary.com/dm63jyidg/image/upload/v1672190593/portfolio/gfnpa4eevfw3t7nnc8dh.jpg', 
-        description: 'This is an app to read, listen, save, and learn.', 
+        description: '> an app to read, listen, save, and learn.', 
         result: '', 
-        code: ''},
+        code: 'https://github.com/trngdothuy/learning-app'},
         {name: 'my-portfolio', 
         id: n++, 
         skills: "html/css, javascript, react.js, node.js, express, git, ui/ux basics, nodemailer", 
-        photo: 'https://res.cloudinary.com/dm63jyidg/image/upload/v1672190593/portfolio/gfnpa4eevfw3t7nnc8dh.jpg', 
-        description: 'This is my portfolio page.', 
+        photo: 'http://res.cloudinary.com/dm63jyidg/image/upload/v1672639071/portfolio/g3vzsmftv7yse7kfbjp8.png', 
+        description: '> my portfolio page.', 
         result: 'http://trangdothuy.surge.sh', 
         code: 'https://github.com/trngdothuy/portfolio'},
         {name: 'javascr-excs', 
         id: n++, 
         skills: "javascript", 
         photo: 'https://cdn-icons-png.flaticon.com/512/5968/5968292.png', 
-        description: 'This is my Javascript exercises at Barcelona Code School Bootcamp.', 
+        description: '> my Javascript practices at Barcelona Code School Bootcamp.', 
         result: '', 
         code: ''},
         {name: 'react-excs', 
         id: n++, 
-        skills: "html/css, javascript, react.js", 
+        skills: "html/css, javascript, react.js, git", 
         photo: 'https://cdn.worldvectorlogo.com/logos/react-1.svg', 
-        description: 'This is my React exercises at Barcelona Code School Bootcamp.', 
+        description: '> my React exercises at Barcelona Code School Bootcamp.', 
+        result: '', 
+        code: ''},
+        {name: 'express-excs', 
+        id: n++, 
+        skills: "html/css, javascript, react.js, express, postman, git, mongodb, node.js", 
+        photo: 'https://softprodigy.com/wp-content/uploads/2019/07/express-js.png', 
+        description: '> my React Express (MERN) exercises at Barcelona Code School Bootcamp.', 
         result: '', 
         code: ''},
         {name: 'python-excs', 
         id: n++, 
-        skills: "python", 
+        skills: "python, git", 
         photo: 'https://www.armadilloamarillo.com/wp-content/uploads/Python-Symbol.png', 
-        description: "This is my Python exercises while self-studying.", 
+        description: "> my Python exercises while self-studying.", 
         result: '', 
-        code: ''},
+        code: 'https://github.com/trngdothuy/python-exercises'},
         {name: 'rust-excs', 
         id: n++, 
-        skills: "rust", 
+        skills: "rust, git", 
         photo: 'http://rust-lang.org/logos/rust-logo-256x256.png', 
-        description: 'This is my Rust exercises while self-studying.', 
+        description: '> my Rust exercises while self-studying.', 
         result: '', 
-        code: ''}];
+        code: 'https://github.com/trngdothuy/rust-exercises'},
+        {name: 'trello-clone', 
+        id: n++, 
+        skills: "html/css, git", 
+        photo: 'https://res.cloudinary.com/dm63jyidg/image/upload/v1672638549/portfolio/ut8tdvqxzan3czncbquk.png', 
+        description: '> a clone of Trello Dashboard created using solely HTML/CSS.',
+        result: 'http://trello.dtt.surge.sh/', 
+        code: 'https://github.com/trngdothuy/Trello-dashboard'},
+        {name: 'hola-bcn', 
+        id: n++, 
+        skills: "html/css, git", 
+        photo: 'https://res.cloudinary.com/dm63jyidg/image/upload/v1672640920/portfolio/dgo0dj9epwr6wmn72ec8.png', 
+        description: '> a responsive multiple-page site created using solely HTML/CSS.',
+        result: 'http://holabcn.dtt.surge.sh/', 
+        code: 'https://github.com/trngdothuy/my-website.git'}];
     
+
+        
 
     const skills = ["html/css","javascript","react.js","node.js", "express","mongodb","react-native","git","ui/ux basics","python", "rust","postman", "google cloud vision api","cloudinary", "nodemailer"];
 
@@ -156,7 +179,7 @@ return (
                                 <p className="prj-description">{prj.description}</p>
                                 <div className="button-row">
                                     <a className="button" href={prj.result}>view-project</a>
-                                    <a className="button" href="/">view-code</a>
+                                    <a className="button" href={prj.code}>view-code</a>
                                 </div>
                             </div>
                     </div>) })}
@@ -173,7 +196,7 @@ return (
                                 <p className="prj-description">{prj.description}</p>
                                 <div className="button-row">
                                     <a className="button" href={prj.result}>view-project</a>
-                                    <a className="button" href="/">view-code</a>
+                                    <a className="button" href={prj.code}>view-code</a>
                                 </div>
                             </div>
                     </div>) })}
