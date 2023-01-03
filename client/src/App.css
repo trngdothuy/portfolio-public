@@ -52,6 +52,12 @@ a {
    color: #a591d2;
 }
 
+.purple-text-in-game {
+  /* home page */
+  /* color: #a591d2; */
+  background-color: transparent;
+}
+
 .blue-text {
   color: #8BE9FD;
 }
@@ -83,7 +89,7 @@ a {
 .full-block-home {
   display: flex;
   /* flex-direction: column; */
-  height: 90vh;
+  /* height: 90vh; */
   flex-wrap: wrap;
   overflow: scroll;
 }
@@ -95,13 +101,57 @@ a {
   overflow: scroll;
 }
 
-.block-2, .block-3 {
+.home-2nd-block {
   padding: 5% 0;
+  /* margin-left: 30vw; */
+  /* position: relative; */
+  display: inline;
   /* display: flex;
   flex-direction: column;
   justify-content: center; */
   /* align-items: center; */
   width: 40vw;
+}
+
+/* home */
+
+.home-1st-block {
+  /* width: 40vw; */
+  margin: 5% 4vw 5% 20vw;
+  display: flex;
+  /* background-image: url("https://www.shutterstock.com/image-vector/green-dust-vector-firework-explosion-600w-520069843.jpg");
+ background-repeat: no-repeat, repeat;
+ background-color: #cccccc;
+ background-position: center;
+ background-size: cover;
+ position: relative; */
+}
+
+.intro-box {
+  /* background: rgb(1,22,39);
+background: linear-gradient(90deg, rgba(1,22,39,1) 0%, rgba(255,91,188,1) 35%, rgba(1,22,39,1) 100%); */
+  /* filter: blur(1px);
+  -webkit-filter: blur(1px); */
+  
+  /* height: 60vh;
+  width: 20vw;
+  opacity: 0.5;
+  position: relative; */
+}
+
+.intro-box-text {
+  /* position: absolute; */
+  height: 60vh;
+  background-color: transparent;
+  flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.button-mobile {
+  visibility: hidden;
+  display: flex;
+  /* justify-content: center; */
+  margin-left: 30vw;
 }
 
 /* home picture */
@@ -419,7 +469,7 @@ a {
   overflow: scroll;
 }
 
-.block-3-abtme {
+.block-3-abtme, .block-3-contact {
   /* align-items: center; */
   width: 40vw;
   border: 0.3px solid #1E2D3D;
@@ -739,6 +789,10 @@ a {
   width: 40vw
 }
 
+.nav-4 {
+  visibility: hidden;
+} 
+
 .nav-box {
   padding: 10px 20px;
   border: 0.3px solid #1E2D3D;
@@ -765,8 +819,20 @@ a {
 .foot-2 {
   width: 60vw;
   display: flex;
-  flex-direction: row-reverse;
-  
+  flex-direction: row-reverse; 
+}
+
+.foot-3 {
+  width: 67vw;
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+.foot-4 {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row-reverse; 
 }
 
 .App {
@@ -808,9 +874,134 @@ a {
   }
 }
 
-@media (max-width: 1185px) {
-  .prj-description {
-    font-size: 0.8em;
-    height: 7em;
+
+/* Responsive Part */  
+
+
+@media (max-width: 1440px) {
+  /* respontive and resize */
+    .full-block-home {
+      /* padding-top: 15vh; */
+    }
+    }
+
+@media (max-width: 1161px) {
+  /* respontive and resize */
+  /* prj */
+  .main-body-prj {
+    padding: 7vh 1vw;
+  }
+  /* contact */
+  .box-first-row {
+    width: 15vw;
+  }
+  .box-white-text-long {
+    font-size: 0.9em;
+  }
+  /* hello */
+  .intro-box-text {
+    font-size: 90%;
+  }
+  /* home */
+  .home-picture-before-drag-pic, .home-picture-after-drag, .home-picture-before-drag {
+    /* height: 400px;
+    width: 400px; */
+  }
+  .purple-text-with-padding {
+    margin-left-: 50px;
   }
   }
+
+@media (max-width: 1025px) {
+  /* ipad pro */
+    /* prj */
+.prj-card {  
+  width: 35%;
+  height: 50%;
+}
+.prj-description {
+  font-size: 0.8em;
+  height: 7em;
+}
+.main-body-prj {
+  height: 79vh;
+}
+.full-block {
+  height: 95vh;
+}
+.box-white-text-long-contact {
+  height: 95vh;
+}
+/* contact */
+.box-first-row {
+  width: 20vw;
+}
+.block-3-contact {
+  width: 50vw
+}
+/* home */
+.full-block-home {
+  height: 95vh;
+}
+.home-1st-block {
+  margin: 15% 20vw 0 30vw;
+  height: 20vh;
+}
+.home-2nd-block {
+  margin-left: 30vw;
+}
+}
+
+@media (max-width: 769px) {
+  /* ipad */
+.nav-box {
+  width: fit-content;
+}
+/* contact */
+.main-body-contact-2 {
+  font-size: 0.8em;
+  margin-top: 6vh;
+}
+.box-first-row {
+  width: 30vw;
+}
+/* home */
+.home-2nd-block {
+  margin-top: 20vh;
+  margin-left: 25vw;
+}
+  
+}
+
+@media (max-width: 376px) {
+  /* iphone x */
+  .nav-2, .nav-3, .foot-1, .foot-2, .home-2nd-block, .block-1 {
+    display: none;
+  }
+  .nav-1 {
+    width: 100%;
+  }
+  .nav-4, .foot-3, .foot-4, .button-mobile {
+    visibility: visible;
+  }
+  /* home */
+  .home-1st-block {
+    margin: 20% 3vw 0 10vw;
+}
+.intro-box-text {
+  height: 70vh;
+}
+/* abt-me */
+.full-block {
+  flex-direction: column;
+}
+.block-2-abtme, .block-3-abtme {
+  width: 100%;
+}
+.box-first-row {
+  width: 40vw;
+}
+.table-1 {
+  width: 100%;
+}
+}

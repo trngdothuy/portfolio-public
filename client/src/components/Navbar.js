@@ -53,6 +53,12 @@ const Navbar = () => {
           </NavLink>
         </div>
       </div>
+
+      <div className="nav-4">
+        <div className="nav-box"> 
+          <a href="/">=</a>
+        </div> 
+      </div>
     </div>
       );
 

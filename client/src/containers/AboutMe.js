@@ -77,11 +77,11 @@ return (
                 {personalInfoPressed ? (
                     <button 
                     className="side-bar-btn"
-                    onClick={handlePersonalInfoClick}>&#9660; personal-info</button>
+                    onClick={handlePersonalInfoClick}>&#9660; my-info</button>
                 ) : (
                     <button 
                     className="side-bar-btn"
-                    onClick={handlePersonalInfoClick}>&#9654; personal-info</button>
+                    onClick={handlePersonalInfoClick}>&#9654; my-info</button>
                 )} 
                 </div>
                 {personalInfoPressed && <div className="box-white-text-hidden">
@@ -89,7 +89,7 @@ return (
                         {/* pressable, change symbols, change color of text */}
                         <button 
                         className="skill-extend-side-bar-btn"
-                        onClick={handleBioClick}>&gt; bio</button>
+                        onClick={handleBioClick}>&gt; pers-info</button>
                     </div>
                     <div className="skill-extend-side-bar">
                         <button 

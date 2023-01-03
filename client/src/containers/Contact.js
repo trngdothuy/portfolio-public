@@ -14,7 +14,7 @@ const [subject, setSubject] = useState();
 const [date, setDate] = useState();
 const [sent, setSent] = useState(false)
 
-let i = 1;
+let i = 1+1;
 
 const [contactPressed, setContactPressed] = useState(false);
 const [findMePressed, setFindMePressed] = useState(false);
@@ -105,7 +105,7 @@ return (
         <ContactScreen1 name={name} setName={setName} email={email} setEmail={setEmail} message={message} setMessage={setMessage} subject={subject} setSubject={setSubject} sent={sent} setSent={setSent}/>
             
 
-        <div class="block-3-abtme">
+        <div class="block-3-contact">
             <div className="first-row-body">
                 <div className="box-first-row">
                     <span>here-to-preview</span> 
@@ -115,7 +115,7 @@ return (
             <div className="main-body-contact-2">
                 <table>
                     <tr>
-                        <td className="number-column">{i}</td>
+                        <td className="number-column">{i-1}</td>
                         <td className="text-column"><span className="pink-text">const</span> <span className="blue-text">button</span> <span className="pink-text">=</span> </td>
                     </tr>
                     <tr>

@@ -24,8 +24,10 @@ function Home() {
                 <div className="home-picture-before-drag-pic"></div>
                 <div class="home-picture-after-drag-text">
                     <h1 className="pink-text" style={{backgroundColor:'transparent',fontSize:'1.9em', width:'400px'}}>Drag & Done Game</h1>
+                    <div className="purple-text-in-game">
                     <h3 className="purple-text" style={{backgroundColor:'transparent',fontSize:'1em', width:'400px'}}>Let's help the pictures find their right positions by dragging them.</h3>
                     <button className="big-button" type= "button" onClick={()=>setNotStart(false)}>Let's play</button>
+                    </div>
                 </div>
             </div>
         </>
@@ -129,18 +131,27 @@ function Home() {
 return (
     <>
     <div className="full-block-home">
-        <div class="block-1"></div>
-        <div class="block-2">
-            <h5>Hi all, I am</h5>
-            <h1 className="pink-text">Trang Do Thuy</h1>
-            <h3 className="blue-text">&gt; Full-Stack Developer</h3>
-            <br/>
-            <h6 className="purple-text"> &#47;&#47; 	&nbsp;complete the game to continue</h6>
-            <h6 className="purple-text"> &#47;&#47; 	&nbsp;you can also see it on my Github page</h6>
-            <h6> <span  className="orange-text">const</span> <span className="green-text">githubLink</span> <span className="white-text">=</span> <span className="yellow-text">"https://github.com/trngdothuy"</span></h6>
+        {/* <div className="block-1"></div> */}
+        <div className="home-1st-block">
+            <>
+            {/* <div className="intro-box"></div> */}
+            <div className="intro-box-text">
+                <h5 style={{backgroundColor:'transparent'}}>Hi all, I am</h5>
+                <h1 className="pink-text" style={{backgroundColor:'transparent'}}>Trang Do Thuy</h1>
+                <h3 className="blue-text" style={{backgroundColor:'transparent'}}>&gt; Full-Stack Developer</h3>
+                <br/>
+                <h6 className="purple-text" style={{backgroundColor:'transparent'}}> &#47;&#47; 	&nbsp;complete the game to continue</h6>
+                <h6 className="purple-text" style={{backgroundColor:'transparent'}}> &#47;&#47; 	&nbsp;please use PC or laptop to see the game</h6>
+                <h6 className="purple-text" style={{backgroundColor:'transparent'}}> &#47;&#47; 	&nbsp;you can also see it on my Github page</h6>
+                <h6 style={{backgroundColor:'transparent'}}> <span  className="orange-text" style={{backgroundColor:'transparent'}}>const</span> <span className="green-text" style={{backgroundColor:'transparent'}}>githubLink</span> <span className="white-text" style={{backgroundColor:'transparent'}}>=</span> <span className="yellow-text" style={{backgroundColor:'transparent'}}>"https://github.com/trngdothuy"</span></h6>
+                <div className="button-mobile">
+                <button className="big-button" type= "button" onClick={()=>navigate('/about-me')}>see-more</button>
+                </div>
+            </div>
+            </>
         </div>
 
-        <div class="block-3">
+        <div class="home-2nd-block">
             {game()}
         </div>
     </div></>

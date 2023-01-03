@@ -147,14 +147,14 @@ return (
                         onClick={handleProjectsClick}>&#9654; projects</button>
                     )}
                 </div>
-                {projectsPressed && <div className="box-white-text-long-contact">
+                {projectsPressed ? (<div className="box-white-text-long-contact">
                     {skills.map((skill, i) => {
                         return <div className="filter-box" key={i}>
                                 <input type="checkbox" onChange={handleChangeCheckBox} id={skill} name={skill} value={skill} />
                                 <label for={skill}>{skill}</label>
                             </div>
                     })}
-                </div>}
+                </div>) : (<div className="box-white-text-long-contact"></div>)}
             </div>
         </div>
 
