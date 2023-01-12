@@ -8,6 +8,7 @@ import Home from "./containers/Home.js";
 import AboutMe from "./containers/AboutMe.js";
 import Projects from "./containers/Projects.js";
 import Contact from "./containers/Contact.js";
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (

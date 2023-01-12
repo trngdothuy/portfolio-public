@@ -5,10 +5,10 @@ import {useLocation, useNavigate} from 'react-router-dom'
 
 function Home() {
 
-    let n = 1
+    let n = 2
     let projects = [
         {name: 'vina-t&t',
-        id: n, 
+        id: n-1, 
         skills: "html/css, javascript, react.js, node.js, express, mongodb, git, ui/ux basics, postman, nodemailer", 
         photo: 'https://res.cloudinary.com/dm63jyidg/image/upload/v1672190592/portfolio/gbriqtc45bugvfszqgt0.jpg', 
         description: '> an e-commerce site allowing users to trace origin and observe life of fruits.', 

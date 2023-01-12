@@ -141,7 +141,7 @@ background: linear-gradient(90deg, rgba(1,22,39,1) 0%, rgba(255,91,188,1) 35%, r
 
 .intro-box-text {
   /* position: absolute; */
-  height: 60vh;
+  /* height: 60vh; */
   background-color: transparent;
   flex-wrap: wrap;
     overflow: scroll;
@@ -281,7 +281,7 @@ background: linear-gradient(90deg, rgba(1,22,39,1) 0%, rgba(255,91,188,1) 35%, r
   height: 50px;
 }
 
-.skill-extend-side-bar:hover {
+.skill-extend-side-bar:hover, .skills-nav-extend:hover {
   color: white;
   text-shadow: 1px 1px #0de861;
 }
@@ -482,8 +482,18 @@ background: linear-gradient(90deg, rgba(1,22,39,1) 0%, rgba(255,91,188,1) 35%, r
   width: 40vw;
 }
 .number-column {
-  padding: 0 2em;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  padding-left: 1.5em;
+  padding-right: 0.3em;
   color: #6272A4;
+  color: #6272A4;
+  /* justify-content: flex-start;
+  align-content: space-around;
+  align-items: center; */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .skill-card {
@@ -770,6 +780,7 @@ background: linear-gradient(90deg, rgba(1,22,39,1) 0%, rgba(255,91,188,1) 35%, r
   border: 0.3px solid #1E2D3D;
   position: sticky;
   top: 0;
+  /* overflow: hidden; */
 }
 
 .nav-1 {
@@ -789,15 +800,75 @@ background: linear-gradient(90deg, rgba(1,22,39,1) 0%, rgba(255,91,188,1) 35%, r
   width: 40vw
 }
 
+/* .nav-icon {
+  display: none;
+} */
+
 .nav-4 {
-  visibility: hidden;
+  display: none;
+  color: white;
 } 
+
+.nav-4 > .nav-box {
+  border: none;
+}
 
 .nav-box {
   padding: 10px 20px;
   border: 0.3px solid #1E2D3D;
   align-content: center;
 }
+
+.nav-box-1 {
+  padding: 10px 20px;
+  align-content: center;
+}
+
+.hamburgerText {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: 50px;
+  width: 100vw;
+  height: 100vh;
+  left: -1em;
+  position: absolute;
+  /* background: rgba(0, 0, 0, 0.8); */
+  /* background-color: #011627; */
+  color: white;
+  padding: 10px;
+  overflow: scroll;
+}
+
+.hamTextBox {
+  border: 0.3px solid #1E2D3D;
+}
+
+.hamTextBox:hover, .side-bar-btn-nav:hover {
+  text-shadow: 1px 3px #dd82b8;
+}
+
+.side-bar-btn-nav {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  /* gap: 5px; */
+  font-size: 1em;
+  line-height: 50px;
+}
+
+.skills-nav {
+  display: grid;
+}
+
+.skills-nav-extend {
+  color: #6272A4;
+  padding: 2px ;
+  width: 50vw;
+}
+
 
 /* footer */
 
@@ -908,7 +979,7 @@ background: linear-gradient(90deg, rgba(1,22,39,1) 0%, rgba(255,91,188,1) 35%, r
     width: 400px; */
   }
   .purple-text-with-padding {
-    margin-left-: 50px;
+    margin-left: 50px;
   }
   }
 
@@ -946,10 +1017,54 @@ background: linear-gradient(90deg, rgba(1,22,39,1) 0%, rgba(255,91,188,1) 35%, r
 .home-1st-block {
   margin: 15% 20vw 0 30vw;
   height: 20vh;
+  overflow: none;
 }
 .home-2nd-block {
-  margin-left: 30vw;
+  /* margin-left: 30vw; */
+  height: 80vh;
+    margin-left: 25vw;
+    top: 650px;
+    position: absolute;
 }
+}
+
+@media (max-width: 910px) {
+  /* nav-bar change */
+
+  .icon-column {
+    display: none;
+  }
+
+  .full-nav {
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column;
+    width: 100%;
+    border-top: 1pxsolid #fff;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease; */
+  }
+  
+  .nav-1 {
+    width: fit-content;
+  }
+
+  .nav-2, .nav-3 {
+    display: none;
+  }
+
+  .nav-4 {
+    display:block;
+  }
+
+  .personal-info-column {
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 769px) {
@@ -975,7 +1090,7 @@ background: linear-gradient(90deg, rgba(1,22,39,1) 0%, rgba(255,91,188,1) 35%, r
 
 @media (max-width: 376px) {
   /* iphone x */
-  .nav-2, .nav-3, .foot-1, .foot-2, .home-2nd-block, .block-1 {
+  .nav-2, .nav-3, .foot-1, .foot-2, .home-2nd-block, .block-1, .number-column {
     display: none;
   }
   .nav-1 {
@@ -1003,5 +1118,17 @@ background: linear-gradient(90deg, rgba(1,22,39,1) 0%, rgba(255,91,188,1) 35%, r
 }
 .table-1 {
   width: 100%;
+}
+.main-body {
+  font-size: 0.85em;
+  padding: 1em;
+  height: 70vh;
+}
+.block-2-prj {
+  width: 100vw;
+}
+.prj-card {
+  height: 80%;
+  width: 80%;
 }
 }

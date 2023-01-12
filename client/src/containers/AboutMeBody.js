@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 
 function AboutMeBody({bioPressed, handleCvClick, setBioPressed, handleBioClick}) {
-    let i = 1;
-    let i2 = 1;
+    let i = 2;
+    let i2 = 1+1;
 
     const [detailPressed, setDetailPressed] = useState(false);
     const [stars, setStars] = useState(parseFloat(localStorage.getItem("stars")) || 0);
@@ -66,105 +66,174 @@ return (
         <div className="main-body">
             <table className="table-1">
                 <tr>
-                    <td className="number-column">{i2}</td>
-                    <td className="text-column">/*</td>
+                    <td className="number-column">
+                        <div className="comment-text">{i2-1}</div>
+                        <div className="white-text">/*</div>
+                        </td>
+                    <td className="text-column"></td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column"><b><i className="pink-text-underlined">* About me:</i></b></td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"><b><i className="pink-text-underlined">About me:</i></b></td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">*</td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"></td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">* I am a <span className="purple-text">Junior Full-stack Developer</span>  with a</td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">I am a <span className="purple-text">Junior Full-stack Developer</span>  with a</td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">* Master’s degree, majoring in <i><u><a className="blue-text" href="https://www.euruni.edu/en/Programs/Master-s/Master-in-Digital-Business-Barcelona/Overview/Overview.html">
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">Master’s degree, majoring in <i><u><a className="blue-text" href="https://www.euruni.edu/en/Programs/Master-s/Master-in-Digital-Business-Barcelona/Overview/Overview.html">
                     Digital Business
                     </a></u></i>.
 </td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">*  </td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"></td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">* I decided to switch my career path with</td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">I decided to switch my career path with</td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">* serious consideration to courageously follow</td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">serious consideration to courageously follow</td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">*  <i className="yellow-text">my true passion</i>. </td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"><i className="yellow-text">my true passion</i>. </td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">* </td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"></td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">*  I’ve started a <i><u><a className="pink-text" href="https://barcelonacodeschool.com/trang-journey-through-the-coding-bootcamp">
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">I’ve started a <i><u><a className="pink-text" href="https://barcelonacodeschool.com/trang-journey-through-the-coding-bootcamp">
                     journey
                         </a></u></i> and joined an </td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">*  <span className="blue-text">intensive-9-week Javascript bootcamp
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"><span className="blue-text">intensive-9-week Javascript bootcamp
                         </span> at </td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">*  <u><a href="https://barcelonacodeschool.com/barcelona-code-school/javascript-full-stack-bootcamp/">Barcelona Code School</a></u> to extend my knowledge </td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"><u><a href="https://barcelonacodeschool.com/barcelona-code-school/javascript-full-stack-bootcamp/">Barcelona Code School</a></u> to extend my knowledge </td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">* in the IT industry and acquire important skills.</td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">in the IT industry and acquire important skills.</td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">*  </td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"></td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">*  My happiness comes from  <span className="yellow-text">being creative and</span> </td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">My happiness comes from  <span className="yellow-text">being creative and</span> </td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">* <span className="yellow-text">innovative</span> to produce best performances </td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"><span className="yellow-text">innovative</span> to produce best performances </td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">*  <i className="purple-text">beyond expectation</i>.</td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"><i className="purple-text">beyond expectation</i>.</td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">*</td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"></td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">* Please click<button 
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">Please click<button 
                         className="inside-body-btn"
                         onClick={handleCvClick}><u className="pink-text">here</u></button>
                     to see my CV. Thank you</td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">* for your time!</td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">for your time!</td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">*</td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"></td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i2++}</td>
-                    <td className="text-column">*/</td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i2++}</div>
+                        <div className="white-text">*/</div>
+                    </td>
+                    <td className="text-column"></td>
                 </tr>
             </table>
         </div> 
@@ -179,120 +248,194 @@ return (
         <div className="main-body">
             <table className="table-1">
                 <tr>
-                    <td className="number-column">{i}</td>
-                    <td className="text-column">/*</td>
-                </tr>
-                <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column"><b><i className="pink-text-underlined">* My CV:</i></b></td>
-                </tr>
-                <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">*</td>
-                </tr>
-                <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">* I have figured out my future path - growing </td>
-                </tr>
-                <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">* myself as  <span className="purple-text">a well-experienced developer</span>.
+                    <td className="number-column">
+                        <div className="comment-text"> {i-1}</div>
+                        <div className="white-text">/*</div>
                     </td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">*  </td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"><b><i className="pink-text-underlined">My CV:</i></b></td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">* I am willing to<i className="pink-text"> learn</i>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"></td>
+                </tr>
+                <tr>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">I have figured out my future path - growing </td>
+                </tr>
+                <tr>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">myself as  <span className="purple-text">a well-experienced developer</span>.
+                    </td>
+                </tr>
+                <tr>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"></td>
+                </tr>
+                <tr>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">I am willing to<i className="pink-text"> learn</i>
                         ,
                         <i className="pink-text"> improve </i>
                         and
                         <i className="pink-text"> work hard</i></td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">* for my career.</td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">for my career.</td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">* </td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"></td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">* Equipped with previous experiences in </td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">Equipped with previous experiences in </td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">*  
-                        <b className="yellow-text"> Customer Service, Sales, </b>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">  
+                        <b className="yellow-text">Customer Service, Sales, </b>
                         and 
                         <b className="yellow-text"> E-commerce</b>
                         , </td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">*  I've sharpen my personality with <i className="purple-text">consistency</i>, </td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">I've sharpen my personality with <i className="purple-text">consistency</i>, </td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">* <i className="purple-text">prudence</i>, and <i className="purple-text">enthusiasm</i>.</td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"><i className="purple-text">prudence</i>, and <i className="purple-text">enthusiasm</i>.</td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">* </td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"></td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">* Additionally, I believe my comprehension of
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">Additionally, I believe my comprehension of
                     </td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">* <b className="yellow-text"> Economy </b>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"><b className="yellow-text"> Economy </b>
                     and <b className="yellow-text"> Business </b>
                     can pave the way to have</td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">* a broader knowledge of digital solutions, thus,</td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">a broader knowledge of digital solutions, thus,</td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">*  helping them grow both 
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">helping them grow both 
                     <i className="purple-text"> technically & profitably</i>.</td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">*
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">
                     </td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">* Here is my <u><i><a className="pink-text" href = "/">CV</a></i></u>. To back to my bio, please click<button 
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">Here is my <u><i><a className="pink-text" href = "/">CV</a></i></u>. To back to my bio, please click<button 
                         className="inside-body-btn"
                         onClick={handleBioClick}><i><u className="pink-text">here</u></i></button>.</td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">* </td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"></td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">* <i className="blue-text">Thank you and best regards,</i></td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"><i className="blue-text">Thank you and best regards,</i></td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">* <i className="blue-text">Trang Do</i></td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"><i className="blue-text">Trang Do</i></td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">* </td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column"></td>
                 </tr>
                 <tr>
-                    <td className="number-column">{i++}</td>
-                    <td className="text-column">*/</td>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*/</div>
+                    </td>
+                    <td className="text-column"></td>
                 </tr>
             </table>
         </div> 
