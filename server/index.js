@@ -44,6 +44,18 @@ app.use('/emails', require('./routes/EmailsRoute.js'));
 // 	res.sendFile(path.join(__dirname + '/../404/'));
 // });
 
+// heroku deploy
+
+
+const path = require('path');
+
+app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, '../client/build')));
+
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+});
+
 app.listen(PORT, function () {
   console.log(`Server is listening on port ${PORT}!`);
 });
