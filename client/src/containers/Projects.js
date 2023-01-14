@@ -13,7 +13,7 @@ function Home() {
         photo: 'https://res.cloudinary.com/dm63jyidg/image/upload/v1672190592/portfolio/gbriqtc45bugvfszqgt0.jpg', 
         description: '> an e-commerce site allowing users to trace origin and observe life of fruits.', 
         result: 'https://projects.barcelonacodeschool.com/vinatt', 
-        code: 'https://github.com/trngdothuy/vina-t-t-web-application'}, 
+        code: 'https://github.com/trngdothuy/vina-t-t-public'}, 
         {name: 'to-do-app', 
         id: n++, 
         skills: "html/css, javascript, react.js, node.js, react-native, git, ui/ux basics", 
