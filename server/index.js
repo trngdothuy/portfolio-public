@@ -44,7 +44,7 @@ app.use('/emails', require('./routes/EmailsRoute.js'));
 // 	res.sendFile(path.join(__dirname + '/../404/'));
 // });
 
-// heroku deploy
+// to deploy site
 
 
 const path = require('path');

@@ -9,7 +9,7 @@ function Home() {
     let projects = [
         {name: 'vina-t&t',
         id: n-1, 
-        skills: "html/css, javascript, react.js, node.js, express, mongodb, git, ui/ux basics, postman, nodemailer", 
+        skills: "html/css, javascript, react.js, node.js, express, mongodb, git, ui/ux basics, postman, nodemailer, bootstrap", 
         photo: 'https://res.cloudinary.com/dm63jyidg/image/upload/v1672190592/portfolio/gbriqtc45bugvfszqgt0.jpg', 
         description: '> an e-commerce site allowing users to trace origin and observe life of fruits.', 
         result: 'https://projects.barcelonacodeschool.com/vinatt', 
@@ -30,7 +30,7 @@ function Home() {
         code: 'https://github.com/trngdothuy/learning-app'},
         {name: 'my-portfolio', 
         id: n++, 
-        skills: "html/css, javascript, react.js, node.js, express, git, ui/ux basics, nodemailer", 
+        skills: "html/css, javascript, react.js, node.js, express, git, ui/ux basics, nodemailer, bootstrap", 
         photo: 'http://res.cloudinary.com/dm63jyidg/image/upload/v1672639071/portfolio/g3vzsmftv7yse7kfbjp8.png', 
         description: '> my portfolio page.', 
         result: 'http://trangdothuy.surge.sh', 
@@ -70,7 +70,7 @@ function Home() {
         description: '> my Rust exercises while self-studying.', 
         result: '', 
         code: 'https://github.com/trngdothuy/rust-exercises'},
-        {name: 'trello-clone', 
+        {name: 'trello-cln', 
         id: n++, 
         skills: "html/css, git", 
         photo: 'https://res.cloudinary.com/dm63jyidg/image/upload/v1672638549/portfolio/ut8tdvqxzan3czncbquk.png', 
@@ -83,12 +83,19 @@ function Home() {
         photo: 'https://res.cloudinary.com/dm63jyidg/image/upload/v1672640920/portfolio/dgo0dj9epwr6wmn72ec8.png', 
         description: '> a responsive multiple-page site created using solely HTML/CSS.',
         result: 'http://holabcn.dtt.surge.sh/', 
-        code: 'https://github.com/trngdothuy/my-website.git'}];
+        code: 'https://github.com/trngdothuy/my-website.git'},
+        {name: 'my-cv', 
+        id: n++, 
+        skills: "html/css, javascript, git", 
+        photo: 'https://res.cloudinary.com/dm63jyidg/image/upload/v1673579340/portfolio/flo8ageosa18erytpp3z.png', 
+        description: '> my CV created using HTML/CSS.',
+        result: 'http://trangdo-cv.surge.sh/', 
+        code: 'https://github.com/trngdothuy/my-cv'}];
     
 
         
 
-    const skills = ["html/css","javascript","react.js","node.js", "express","mongodb","react-native","git","ui/ux basics","python", "rust","postman", "google cloud vision api","cloudinary", "nodemailer"];
+    const skills = ["html/css","javascript","react.js","node.js", "express","mongodb","react-native","git","ui/ux basics","python", "rust","postman", "google cloud vision api","cloudinary", "nodemailer", "bootstrap"];
 
     const [projectsPressed, setProjectsPressed] = useState(true);
     const [skillChosen, setSkillChosen] = useState([]);
@@ -195,8 +202,8 @@ return (
                                 <img className="img-grid" alt='projectImage' src={prj.photo} />
                                 <p className="prj-description">{prj.description}</p>
                                 <div className="button-row">
-                                    <a className="button" href={prj.result}>view-project</a>
-                                    <a className="button" href={prj.code}>view-code</a>
+                                    <a className="button" href={prj.result} target="_blank" rel="noreferrer">view-project</a>
+                                    <a className="button" href={prj.code} target="_blank" rel="noreferrer">view-code</a>
                                 </div>
                             </div>
                     </div>) })}

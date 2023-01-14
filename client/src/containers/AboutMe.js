@@ -135,7 +135,7 @@ return (
                 <div className="box-white-text-long">
                 {contactPressed && 
                     <div>
-                    <a className="skill-extend-side-bar" href = "mailto: trng.dt1@gmail.com">trng.dt1@gmail.com</a>
+                    <a className="skill-extend-side-bar" href = "mailto: trng.dt1@gmail.com" target="_blank" rel="noreferrer">trng.dt1@gmail.com</a>
                     </div>}
                 </div>
                 

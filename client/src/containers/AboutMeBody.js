@@ -98,7 +98,7 @@ return (
                         <div className="comment-text"> {i2++}</div>
                         <div className="white-text">*</div>
                     </td>
-                    <td className="text-column">Master’s degree, majoring in <i><u><a className="blue-text" href="https://www.euruni.edu/en/Programs/Master-s/Master-in-Digital-Business-Barcelona/Overview/Overview.html">
+                    <td className="text-column">Master’s degree, majoring in <i><u><a className="blue-text" href="https://www.euruni.edu/en/Programs/Master-s/Master-in-Digital-Business-Barcelona/Overview/Overview.html" target="_blank" rel="noreferrer">
                     Digital Business
                     </a></u></i>.
 </td>
@@ -143,31 +143,24 @@ return (
                         <div className="comment-text"> {i2++}</div>
                         <div className="white-text">*</div>
                     </td>
-                    <td className="text-column">I’ve started a <i><u><a className="pink-text" href="https://barcelonacodeschool.com/trang-journey-through-the-coding-bootcamp">
+                    <td className="text-column">I’ve started a <i><u><a className="pink-text" href="https://barcelonacodeschool.com/trang-journey-through-the-coding-bootcamp" target="_blank" rel="noreferrer">
                     journey
-                        </a></u></i> and joined an </td>
+                        </a></u></i> and joined an <span><u><a  className="blue-text" href="https://barcelonacodeschool.com/barcelona-code-school/javascript-full-stack-bootcamp/" target="_blank" rel="noreferrer">intensive-</a></u>
+                        </span></td>
                 </tr>
                 <tr>
                     <td className="number-column">
                         <div className="comment-text"> {i2++}</div>
                         <div className="white-text">*</div>
                     </td>
-                    <td className="text-column"><span className="blue-text">intensive-9-week Javascript bootcamp
-                        </span> at </td>
+                    <td className="text-column"><u><a  className="blue-text" href="https://barcelonacodeschool.com/barcelona-code-school/javascript-full-stack-bootcamp/" target="_blank" rel="noreferrer">9-week Javascript bootcamp</a></u> to  extend my knowledge</td>
                 </tr>
                 <tr>
                     <td className="number-column">
                         <div className="comment-text"> {i2++}</div>
                         <div className="white-text">*</div>
                     </td>
-                    <td className="text-column"><u><a href="https://barcelonacodeschool.com/barcelona-code-school/javascript-full-stack-bootcamp/">Barcelona Code School</a></u> to extend my knowledge </td>
-                </tr>
-                <tr>
-                    <td className="number-column">
-                        <div className="comment-text"> {i2++}</div>
-                        <div className="white-text">*</div>
-                    </td>
-                    <td className="text-column">in the IT industry and acquire important skills.</td>
+                    <td className="text-column">  in the IT industry and acquire important skills.</td>
                 </tr>
                 <tr>
                     <td className="number-column">
@@ -209,10 +202,9 @@ return (
                         <div className="comment-text"> {i2++}</div>
                         <div className="white-text">*</div>
                     </td>
-                    <td className="text-column">Please click<button 
+                    <td className="text-column">Please click	&#32;<button 
                         className="inside-body-btn"
-                        onClick={handleCvClick}><u className="pink-text">here</u></button>
-                    to see my CV. Thank you</td>
+                        onClick={handleCvClick}><u className="pink-text"> here </u></button>	&#32;to see my CV. Thank you</td>
                 </tr>
                 <tr>
                     <td className="number-column">
@@ -398,9 +390,16 @@ return (
                         <div className="comment-text"> {i++}</div>
                         <div className="white-text">*</div>
                     </td>
-                    <td className="text-column">Here is my <u><i><a className="pink-text" href = "/">CV</a></i></u>. To back to my bio, please click<button 
+                    <td className="text-column">Check out my <u><i><a className="pink-text" href=" https://trangdo-cv.surge.sh/" target="_blank" rel="noreferrer">CV</a></i></u> now!</td>
+                </tr>
+                <tr>
+                    <td className="number-column">
+                        <div className="comment-text"> {i++}</div>
+                        <div className="white-text">*</div>
+                    </td>
+                    <td className="text-column">Wanna back to my bio? <button 
                         className="inside-body-btn"
-                        onClick={handleBioClick}><i><u className="pink-text">here</u></i></button>.</td>
+                        onClick={handleBioClick}><i><u className="pink-text">Click here</u></i></button>.</td>
                 </tr>
                 <tr>
                     <td className="number-column">
@@ -461,7 +460,7 @@ return (
                             <img className="skill-img" src="https://media.licdn.com/dms/image/D4D03AQG7wjUg53Fl4w/profile-displayphoto-shrink_400_400/0/1670675482237?e=1677715200&v=beta&t=gFARcdXV3023F8gL1ItYcZ8NdKKKZu6urVQXCASQivk" alt="Trang"/>
                             <div className="skill-card-name-time">
                                 <b>
-                                    <a className="pink-text" href="https://github.com/trngdothuy">
+                                    <a className="pink-text" href="https://github.com/trngdothuy" target="_blank" rel="noreferrer">
                                         @trngdothuy
                                     </a>
                                 </b>
@@ -493,7 +492,7 @@ return (
                     <div className="skill-card-code">
                         {/* color */}
                         <div> 
-                            <span className="purple-text">function</span> <span className="blue-text">thisIsMySkills </span> 
+                            <span className="purple-text">function</span> <span className="blue-text">getMySkills </span> 
                             <span className="purple-text">&#40;&#41; &#123; </span>
                         </div>
                         <div className="left-space">
@@ -574,7 +573,7 @@ return (
                             <img className="skill-img" src="https://media.licdn.com/dms/image/D4D03AQG7wjUg53Fl4w/profile-displayphoto-shrink_400_400/0/1670675482237?e=1677715200&v=beta&t=gFARcdXV3023F8gL1ItYcZ8NdKKKZu6urVQXCASQivk" alt="Trang"/>
                             <div className="skill-card-name-time">
                                 <b>
-                                    <a className="pink-text" href="https://github.com/trngdothuy">
+                                    <a className="pink-text" href="https://github.com/trngdothuy" target="_blank" rel="noreferrer">
                                         @trngdothuy
                                     </a>
                                 </b>

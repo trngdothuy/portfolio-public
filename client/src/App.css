@@ -368,6 +368,7 @@ background: linear-gradient(90deg, rgba(1,22,39,1) 0%, rgba(255,91,188,1) 35%, r
   background-color: transparent;
   border: none;
   font-size: 1em;
+  padding: 1px;
 }
 
 .box-white-text {
@@ -950,9 +951,17 @@ background: linear-gradient(90deg, rgba(1,22,39,1) 0%, rgba(255,91,188,1) 35%, r
 
 
 @media (max-width: 1440px) {
-  /* respontive and resize */
+  /* responsive and resize */
     .full-block-home {
       /* padding-top: 15vh; */
+    }
+    }
+
+@media (max-width: 1304px) {
+  /* home page in columns */
+    .home-1st-block, .home-2nd-block {
+      margin: 5% 4vw 5% 27vw;
+      padding: 0;
     }
     }
 
