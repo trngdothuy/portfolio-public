@@ -1100,7 +1100,7 @@ background: linear-gradient(90deg, rgba(1,22,39,1) 0%, rgba(255,91,188,1) 35%, r
 }
 
 @media (max-width: 428px) {
-  /* iphone x */
+  /* iphone 13 */
   .nav-2, .nav-3, .foot-1, .foot-2, .home-2nd-block, .block-1, .number-column {
     display: none;
   }
@@ -1145,6 +1145,9 @@ background: linear-gradient(90deg, rgba(1,22,39,1) 0%, rgba(255,91,188,1) 35%, r
 .prj-description {
   font-size: 0.9em;
   height: 4em;
+}
+.block-3-contact {
+  width: 95vw;
 }
 }
 
