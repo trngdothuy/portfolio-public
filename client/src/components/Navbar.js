@@ -30,12 +30,14 @@ const Navbar = () => {
   return (
     <div className="full-nav">
       <div className="nav-1">
+      <a href="/">
         <div className="nav-box"> 
-          <a href="/">trang-do-thuy</a>
+          trang-do-thuy
         </div> 
+        </a>
       </div>
     <div className="nav-2">
-      <div className="nav-box">
+      <a href="/"><div className="nav-box">
         <NavLink 
           to={"/"}
           style={ ({isActive}) => (
@@ -43,9 +45,9 @@ const Navbar = () => {
         )}>
           _hello
         </NavLink>
-      </div>
+      </div></a>
         
-      <div class="nav-box">
+      <a href="/about-me"><div class="nav-box">
         <NavLink
           to="/about-me"
           style={ ({isActive}) => (
@@ -53,9 +55,9 @@ const Navbar = () => {
               )}>
         _about-me
         </NavLink>
-      </div>
+      </div></a>
       
-      <div class="nav-box">
+      <a href="/projects"><div class="nav-box">
         <NavLink
           to="/projects"
           style={ ({isActive}) => (
@@ -63,11 +65,11 @@ const Navbar = () => {
               )}>
         _projects
         </NavLink>
-      </div>
+      </div></a>
       </div>
 
       <div class="nav-3">
-        <div class="nav-box">
+      <a href="/contact"><div class="nav-box">
           <NavLink
           to="/contact"
           style={ ({isActive}) => (
@@ -75,7 +77,7 @@ const Navbar = () => {
               )}>
           _contact-me
           </NavLink>
-        </div>
+        </div></a>
       </div>
 
       {/* <div className="nav-icon" onClick={handleClick}>

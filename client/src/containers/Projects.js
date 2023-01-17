@@ -9,7 +9,7 @@ function Home() {
     let projects = [
         {name: 'vina-t&t',
         id: n-1, 
-        skills: "html/css, javascript, react.js, node.js, express, mongodb, git, ui/ux basics, postman, nodemailer, bootstrap", 
+        skills: "html/css, javascript, react.js, node.js, express, mongodb, git, ui/ux basics, postman, nodemailer, bootstrap, jwt, stripe", 
         photo: 'https://res.cloudinary.com/dm63jyidg/image/upload/v1672190592/portfolio/gbriqtc45bugvfszqgt0.jpg', 
         description: '> an e-commerce site allowing users to trace origin and observe life of fruits.', 
         result: 'https://projects.barcelonacodeschool.com/vinatt', 
@@ -32,7 +32,7 @@ function Home() {
         id: n++, 
         skills: "html/css, javascript, react.js, node.js, express, git, ui/ux basics, nodemailer, bootstrap", 
         photo: 'http://res.cloudinary.com/dm63jyidg/image/upload/v1672639071/portfolio/g3vzsmftv7yse7kfbjp8.png', 
-        description: '> my portfolio page.', 
+        description: '> my portfolio page created from scratch.', 
         result: 'http://trangdothuy.surge.sh', 
         code: 'https://github.com/trngdothuy/portfolio'},
         {name: 'javascr-excs', 
@@ -95,7 +95,7 @@ function Home() {
 
         
 
-    const skills = ["html/css","javascript","react.js","node.js", "express","mongodb","react-native","git","ui/ux basics","python", "rust","postman", "google cloud vision api","cloudinary", "nodemailer", "bootstrap"];
+    const skills = ["html/css","javascript","react.js","node.js", "express","mongodb","react-native","git","ui/ux basics","python", "rust", "bootstrap", "postman", "google cloud vision api","cloudinary", "nodemailer", "jwt", "stripe"];
 
     const [projectsPressed, setProjectsPressed] = useState(true);
     const [skillChosen, setSkillChosen] = useState([]);

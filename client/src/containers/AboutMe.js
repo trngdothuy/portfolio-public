@@ -94,7 +94,7 @@ return (
                     <div className="skill-extend-side-bar">
                         <button 
                         className="skill-extend-side-bar-btn"
-                        onClick={handleCvClick}> &gt; cv</button>
+                        onClick={handleCvClick}> &gt; my-cv</button>
                     </div>
                 </div>}
 
